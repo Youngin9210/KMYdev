@@ -1,6 +1,6 @@
 // declaring variables to add and remove a class on navbar to change background color
 var nav = $('nav');
-var scrollTrigger = 500;
+var scrollTrigger = 50;
 function getScroll() {
   return document.body.scrollTop || document.documentElement.scrollTop;
 }
