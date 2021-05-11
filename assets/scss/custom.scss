@@ -1,5 +1,7 @@
 body {
-  // background-color: black;
+  font-family: 'Prompt', sans-serif;
+  background: #868686be;
+  // color: white;
 }
 
 .navbar {
@@ -9,7 +11,7 @@ body {
   left: 0;
   z-index: 3;
   .navbar-brand {
-    
+    font-family: 'Itim', cursive;
   }
 }
 
@@ -29,8 +31,39 @@ body {
     height: 100%;
     z-index: 1;
   }
-  #headshot {
-    position: relative;
-    top: 15%;
+  h1 {
+    font-family: 'Itim', cursive;
+    line-height: 1;
+  }
+  h3 {
+    font-weight: 100;
+  }
+  // #headshot {
+  //   position: relative;
+  //   top: 15%;
+  // }
+}
+
+#aboutMe {
+  #technologies2 {
+    span {
+      i {
+        font-size: 4rem;
+        margin: 4px;
+      }
+    }
+  }
+}
+
+#myWork {
+  .projectContainer {
+    .projectRow {
+      .projectText {
+        background: rgba(218, 216, 216, 0.836);
+        .technologyList {
+          list-style: none;
+        }
+      }
+    }
   }
 }

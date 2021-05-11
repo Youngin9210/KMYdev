@@ -8348,12 +8348,18 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important; } }
+body {
+  font-family: 'Prompt', sans-serif;
+  background: #868686be; }
+
 .navbar {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: 3; }
+  .navbar .navbar-brand {
+    font-family: 'Itim', cursive; }
 
 #hero {
   background: url("../images/header.jpeg") center center/cover no-repeat;
@@ -8369,8 +8375,19 @@ textarea.form-control-lg {
     width: 100%;
     height: 100%;
     z-index: 1; }
-  #hero #headshot {
-    position: relative;
-    top: 15%; }
+  #hero h1, #hero .h1 {
+    font-family: 'Itim', cursive;
+    line-height: 1; }
+  #hero h3, #hero .h3 {
+    font-weight: 100; }
+
+#aboutMe #technologies2 span i {
+  font-size: 4rem;
+  margin: 4px; }
+
+#myWork .projectContainer .projectRow .projectText {
+  background: rgba(218, 216, 216, 0.836); }
+  #myWork .projectContainer .projectRow .projectText .technologyList {
+    list-style: none; }
 
 /*# sourceMappingURL=app.css.map */

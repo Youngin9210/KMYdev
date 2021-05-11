@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KMY Dev</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Prompt&family=Roboto&display=swap" rel="stylesheet">
   <!-- Custom Scss -->
   <link rel="stylesheet" href="assets/css/app.css">
 </head>
@@ -31,7 +32,7 @@
           <a href="#" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#about" class="nav-link">About</a>
+          <a href="#aboutMe" class="nav-link">About</a>
         </li>
         <li class="nav-item">
           <a href="#myWork" class="nav-link" id="logout">My Work</a>
@@ -43,12 +44,137 @@
     </div>
   </nav>
 
-  <section id="hero" class="d-flex justify-content-center alignt-items-center">
+  <section id="hero" class="d-flex justify-content-center align-items-center">
     <div id="overlay"></div>
     <div id="header" class="container text-white text-center">
       <!-- <img id="headshot" src="assets/images/headshot.png" alt="" srcset=""> -->
-      <h1 id="name">Kyle Young</h1>
+      <h1 id="name" class="display-1 mb-0">Kyle Young</h1>
+      <h3 class="display-5">Full Stack Developer</h3>
+    </div>
+  </section>
 
+  <section id="aboutMe" class="">
+    <div class="container text-center mt-5">
+      <h5 class="display-6">Hello!</h5>
+      <p class="lead">My name is Kyle Young and I am a Full Stack Developer!</p>
+      <div class="container-fluid" id="technologies2">
+        <span><i class="devicon-html5-plain-wordmark colored"></i></span>
+        <span><i class="devicon-css3-plain-wordmark colored"></i></span>
+        <span><i class="devicon-bootstrap-plain colored"></i></span>
+        <span><i class="devicon-javascript-plain colored"></i></span>
+        <span><i class="devicon-jquery-plain-wordmark colored"></i></span>
+        <span><i class="devicon-nodejs-plain colored"></i></span>
+        <span><i class="devicon-npm-original-wordmark colored"></i></span>
+        <span><i class="devicon-express-original colored"></i></span>
+        <span><i class="devicon-mysql-plain colored"></i></span>
+        <span><i class="devicon-sequelize-plain colored"></i></span>
+        <span><i class="devicon-handlebars-plain colored"></i></span>
+        <span><i class="devicon-github-original-wordmark colored"></i></span>
+        <span><i class="devicon-git-plain-wordmark colored"></i></span>
+        <span><i class="devicon-heroku-original-wordmark colored"></i></span>
+        <span><i class="devicon-slack-plain-wordmark colored"></i></span>
+        <span><i class="devicon-visualstudio-plain colored"></i></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid" id="myWork">
+    <h3 class="display-4 text-center m-3">My Work</h3>
+    <!-- Lost & Found -->
+    <div class="container-fluid projectContainer">
+      <div class="row g-0 m-2 projectRow">
+        <div class="col-lg-6 text-left projectText p-5">
+          <h5 class="display-5">Lost & Found</h5>
+          <p class="lead">
+            A group project designed to allow users help one another by finding lost items throughout the world!
+          </p>
+          <h5>Technologies Used:</h5>
+          <ul class="technologyList">
+            <li>Javascript</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Sequelize</li>
+            <li>Handlebars</li>
+          </ul>
+          <a href="https://glacial-fortress-45860.herokuapp.com/" target="_blank" class="btn btn-large btn-primary">Show
+            Me!</a>
+        </div>
+        <div class="col-lg-6 imgContainer d-flex align-items-center">
+          <img src="assets/images/lost-found.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <!-- Tech Blog -->
+    <div class="container-fluid projectContainer">
+      <div class="row g-0 m-2 projectRow">
+        <div class="col-lg-6 order-lg-2 text-left projectText p-5">
+          <h5 class="display-5">Tech Blog</h5>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eius dignissimos vero
+            quisquam praesentium quam officia odio ipsum iste quis?
+          </p>
+          <h5>Technologies Used:</h5>
+          <ul class="technologyList">
+            <li>Javascript</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Sequelize</li>
+            <li>Handlebars</li>
+          </ul>
+          <a href="" class="btn btn-large btn-primary" target="_blank">Show Me!</a>
+        </div>
+        <div class="col-lg-6 order-lg-1 imgContainer d-flex align-items-center">
+          <img src="assets/images/tech-blog.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <!-- Note Taker -->
+    <div class="container-fluid projectContainer">
+      <div class="row g-0 m-2 projectRow">
+        <div class="col-lg-6 text-left p-5 projectText ">
+          <h5 class="display-5">Note Taker</h5>
+          <p class="lead">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio earum voluptas aperiam pariatur unde
+            doloremque eligendi voluptatum sed asperiores ab.
+          </p>
+          <h5>Technologies Used</h5>
+          <ul class="technologyList">
+            <li>Javascript</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Sequelize</li>
+            <li>Handlebars</li>
+          </ul>
+          <a href="" class="btn btn btn-large btn-primary" target="_blank">Show Me!</a>
+        </div>
+        <div class="col-lg-6 imgContainer d-flex align-items-center">
+          <img src="assets/images/note-taker.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <!-- Weather Dashboard -->
+    <div class="container-fluid projectContainer">
+      <div class="row g-0 m-2 projectRow">
+        <div class="col-lg-6 order-lg-2 text-left projectText p-5">
+          <h5 class="display-5">Weather Dashboard</h5>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eius dignissimos vero
+            quisquam praesentium quam officia odio ipsum iste quis?
+          </p>
+          <h5>Technologies Used:</h5>
+          <ul class="technologyList">
+            <li>Javascript</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Sequelize</li>
+            <li>Handlebars</li>
+          </ul>
+          <a href="" class="btn btn-large btn-primary" target="_blank">Show Me!</a>
+        </div>
+        <div class="col-lg-6 order-lg-1 imgContainer d-flex align-items-center">
+          <img src="assets/images/weather-dashboard.png" alt="" class="img-fluid">
+        </div>
+      </div>
     </div>
   </section>
 
