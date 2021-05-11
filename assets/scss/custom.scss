@@ -64,6 +64,33 @@ body {
           list-style: none;
         }
       }
+      .imgContainer {
+        min-height: 400px;
+      }
+    }
+  }
+  #lostFound {
+    .imgContainer {
+      background: url('../images/lost-found.png') top center / cover no-repeat;
+    }
+  }
+  #techBlog {
+    .imgContainer {
+      background: url('../images/tech-blog.png') top left / cover no-repeat;
+      // min-height: 400px;
+    }
+  }
+  #noteTaker {
+    .imgContainer {
+      background: url('../images/note-taker.png') top center / cover no-repeat;
+      // min-height: 400px;
+    }
+  }
+  #weatherDash {
+    .imgContainer {
+      background: url('../images/weather-dashboard.png') top left / cover
+        no-repeat;
+      // min-height: 400px;
     }
   }
 }

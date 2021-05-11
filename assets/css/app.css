@@ -8389,5 +8389,15 @@ body {
   background: rgba(218, 216, 216, 0.836); }
   #myWork .projectContainer .projectRow .projectText .technologyList {
     list-style: none; }
+#myWork .projectContainer .projectRow .imgContainer {
+  min-height: 400px; }
+#myWork #lostFound .imgContainer {
+  background: url("../images/lost-found.png") top center/cover no-repeat; }
+#myWork #techBlog .imgContainer {
+  background: url("../images/tech-blog.png") top left/cover no-repeat; }
+#myWork #noteTaker .imgContainer {
+  background: url("../images/note-taker.png") top center/cover no-repeat; }
+#myWork #weatherDash .imgContainer {
+  background: url("../images/weather-dashboard.png") top left/cover no-repeat; }
 
 /*# sourceMappingURL=app.css.map */
