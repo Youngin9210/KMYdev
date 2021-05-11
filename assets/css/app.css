@@ -8353,13 +8353,18 @@ body {
   background: #868686be; }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 3; }
   .navbar .navbar-brand {
     font-family: 'Itim', cursive; }
+  .navbar #kmyNav .nav-link:hover {
+    color: white; }
+
+.navScroll {
+  background: black; }
 
 #hero {
   background: url("../images/header.jpeg") center center/cover no-repeat;
@@ -8381,7 +8386,7 @@ body {
   #hero h3, #hero .h3 {
     font-weight: 100; }
 
-#aboutMe #technologies2 span i {
+#aboutMe #technologies span i {
   font-size: 4rem;
   margin: 4px; }
 
