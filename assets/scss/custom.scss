@@ -1,11 +1,10 @@
 body {
   font-family: 'Prompt', sans-serif;
   background: #868686be;
-  // color: white;
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -13,6 +12,14 @@ body {
   .navbar-brand {
     font-family: 'Itim', cursive;
   }
+  #kmyNav {
+    .nav-link:hover {
+      color: white;
+    }
+  }
+}
+.navScroll {
+  background: black;
 }
 
 #hero {
@@ -45,7 +52,7 @@ body {
 }
 
 #aboutMe {
-  #technologies2 {
+  #technologies {
     span {
       i {
         font-size: 4rem;
