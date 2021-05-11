@@ -3,15 +3,20 @@ body {
   background: #868686be;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Itim', cursive;
+}
+
 .navbar {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 3;
-  .navbar-brand {
-    font-family: 'Itim', cursive;
-  }
   #kmyNav {
     .nav-link:hover {
       color: white;
@@ -39,16 +44,12 @@ body {
     z-index: 1;
   }
   h1 {
-    font-family: 'Itim', cursive;
     line-height: 1;
   }
-  h3 {
-    font-weight: 100;
+  #headshot {
+    position: relative;
+    top: 15%;
   }
-  // #headshot {
-  //   position: relative;
-  //   top: 15%;
-  // }
 }
 
 #aboutMe {
@@ -98,6 +99,16 @@ body {
       background: url('../images/weather-dashboard.png') top left / cover
         no-repeat;
       // min-height: 400px;
+    }
+  }
+}
+
+footer {
+  background: black;
+  .nav-link {
+    color: white;
+    i {
+      font-size: 2rem;
     }
   }
 }

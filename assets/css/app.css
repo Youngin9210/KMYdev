@@ -8352,14 +8352,23 @@ body {
   font-family: 'Prompt', sans-serif;
   background: #868686be; }
 
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  font-family: 'Itim', cursive; }
+
 .navbar {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 3; }
-  .navbar .navbar-brand {
-    font-family: 'Itim', cursive; }
   .navbar #kmyNav .nav-link:hover {
     color: white; }
 
@@ -8381,10 +8390,10 @@ body {
     height: 100%;
     z-index: 1; }
   #hero h1, #hero .h1 {
-    font-family: 'Itim', cursive;
     line-height: 1; }
-  #hero h3, #hero .h3 {
-    font-weight: 100; }
+  #hero #headshot {
+    position: relative;
+    top: 15%; }
 
 #aboutMe #technologies span i {
   font-size: 4rem;
@@ -8404,5 +8413,12 @@ body {
   background: url("../images/note-taker.png") top center/cover no-repeat; }
 #myWork #weatherDash .imgContainer {
   background: url("../images/weather-dashboard.png") top left/cover no-repeat; }
+
+footer {
+  background: black; }
+  footer .nav-link {
+    color: white; }
+    footer .nav-link i {
+      font-size: 2rem; }
 
 /*# sourceMappingURL=app.css.map */
