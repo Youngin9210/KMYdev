@@ -29,8 +29,8 @@ app.post('/email', (req, res) => {
   // TODO
   // send email here
 
-  const transporter = nodemailer.createTransport('SMTP', {
-    service: 'Gmail',
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASS,
