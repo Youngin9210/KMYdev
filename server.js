@@ -29,7 +29,7 @@ app.post('/email', (req, res) => {
   // TODO
   // send email here
 
-  const transporter = nodemailer.createTransport({
+  const transporter = nodemailer.createTransport('SMTP', {
     service: 'gmail',
     auth: {
       user: process.env.EMAIL,
@@ -38,7 +38,7 @@ app.post('/email', (req, res) => {
   });
 
   const mailOptions = {
-    // from: req.body.email,
+    from: process.env.EMAIL,
     to: process.env.EMAIL,
     subject: `${req.body.name} is contacting you from Portfolio site!`,
     text: `Email: ${req.body.email}\nPhone: ${req.body.phone}\n\nMessage:\n${req.body.message}`,
