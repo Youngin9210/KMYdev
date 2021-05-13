@@ -5,7 +5,6 @@ const nodemailer = require('nodemailer');
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({});
 const path = require('path');
-const { getMaxListeners } = require('process');
 
 // Sets up the Express App
 const app = express();
@@ -33,14 +32,14 @@ app.post('/email', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'kmydev1719@gmail.com',
-      pass: 'Maverick2021!',
+      user: process.env.EMAIL,
+      pass: process.env.PASS,
     },
   });
 
   const mailOptions = {
-    from: 'kmydev1719@gmail.com',
-    to: 'kmydev1719@gmail.com',
+    // from: 'kmydev1719@gmail.com',
+    to: process.env.EMAIL,
     subject: `${req.body.name} is contacting you from Portfolio site!`,
     text: `Email: ${req.body.email}\nPhone: ${req.body.phone}\n\nMessage:\n${req.body.message}`,
   };
