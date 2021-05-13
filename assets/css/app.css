@@ -8350,7 +8350,9 @@ textarea.form-control-lg {
     display: none !important; } }
 body {
   font-family: 'Prompt', sans-serif;
-  background: #868686be; }
+  background: radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#a8b1bb 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #a8b1bb 8px, transparent 8px) -4px 0;
+  background-color: slategray;
+  background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px; }
 
 h1, .h1,
 h2,
@@ -8395,30 +8397,36 @@ h5,
     position: relative;
     top: 15%; }
 
-#aboutMe #technologies span i {
-  font-size: 4rem;
-  margin: 4px; }
+#aboutMe {
+  background: #d0d1d1ce; }
+  #aboutMe #technologies span i {
+    font-size: 4rem;
+    margin: 4px; }
 
-#myWork .projectContainer .projectRow .projectText {
-  background: rgba(218, 216, 216, 0.836); }
-  #myWork .projectContainer .projectRow .projectText .technologyList {
-    list-style: none; }
-#myWork .projectContainer .projectRow .imgContainer {
-  min-height: 400px; }
-#myWork #lostFound .imgContainer {
-  background: url("../images/lost-found.png") top center/cover no-repeat; }
-#myWork #techBlog .imgContainer {
-  background: url("../images/tech-blog.png") top left/cover no-repeat; }
-#myWork #noteTaker .imgContainer {
-  background: url("../images/note-taker.png") top center/cover no-repeat; }
-#myWork #weatherDash .imgContainer {
-  background: url("../images/weather-dashboard.png") top left/cover no-repeat; }
+#myWork {
+  background: #d0d1d1ce; }
+  #myWork .projectContainer .projectRow .projectText {
+    background: rgba(218, 216, 216, 0.836); }
+    #myWork .projectContainer .projectRow .projectText .technologyList {
+      list-style: none; }
+  #myWork .projectContainer .projectRow .imgContainer {
+    min-height: 400px; }
+  #myWork #lostFound .imgContainer {
+    background: url("../images/lost-found.png") top center/cover no-repeat; }
+  #myWork #techBlog .imgContainer {
+    background: url("../images/tech-blog.png") top left/cover no-repeat; }
+  #myWork #noteTaker .imgContainer {
+    background: url("../images/note-taker.png") top center/cover no-repeat; }
+  #myWork #weatherDash .imgContainer {
+    background: url("../images/weather-dashboard.png") top left/cover no-repeat; }
 
 footer {
-  background: black; }
+  background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px; }
   footer .nav-link {
     color: white; }
     footer .nav-link i {
-      font-size: 2rem; }
+      font-size: 3rem; }
 
 /*# sourceMappingURL=app.css.map */

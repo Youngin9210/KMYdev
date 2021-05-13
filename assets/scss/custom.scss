@@ -1,6 +1,28 @@
 body {
   font-family: 'Prompt', sans-serif;
-  background: #868686be;
+
+  // background from: https://projects.verou.me/css3patterns/
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      slategray 20%,
+      slategray 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        slategray 20%,
+        slategray 80%,
+        transparent 80%,
+        transparent
+      )
+      50px 50px,
+    linear-gradient(#a8b1bb 8px, transparent 8px) 0 -4px,
+    linear-gradient(90deg, #a8b1bb 8px, transparent 8px) -4px 0;
+  background-color: slategray;
+  background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
 }
 
 h1,
@@ -53,6 +75,7 @@ h5 {
 }
 
 #aboutMe {
+  background: #d0d1d1ce;
   #technologies {
     span {
       i {
@@ -64,6 +87,8 @@ h5 {
 }
 
 #myWork {
+  background: #d0d1d1ce;
+
   .projectContainer {
     .projectRow {
       .projectText {
@@ -104,11 +129,17 @@ h5 {
 }
 
 footer {
-  background: black;
+  // background from: https://projects.verou.me/css3patterns/
+  background: radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px;
   .nav-link {
     color: white;
     i {
-      font-size: 2rem;
+      font-size: 3rem;
     }
   }
 }
